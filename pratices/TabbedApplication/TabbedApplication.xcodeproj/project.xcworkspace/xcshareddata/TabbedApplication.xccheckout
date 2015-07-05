@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0A528E2F-BED8-44CE-9E0C-2496B63F3E1A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TabbedApplication</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>70BC453B2BFC4D019FFF3434731AF6F4EE114C59</key>
 		<string>https://github.com/chenhengjie123/iOS_training_app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>pratices/TabbedApplication/TabbedApplication.xcodeproj/project.xcworkspace</string>
+	<string>pratices/TabbedApplication/TabbedApplication.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70BC453B2BFC4D019FFF3434731AF6F4EE114C59</key>
