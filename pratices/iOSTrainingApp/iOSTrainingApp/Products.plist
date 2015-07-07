@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>MX4</string>
+		<key>brand</key>
+		<string>Meizu</string>
+		<key>image</key>
+		<string>MX4</string>
+		<key>price</key>
+		<string>1799</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>MX3</string>
+		<key>brand</key>
+		<string>Meizu</string>
+		<key>image</key>
+		<string>MX3</string>
+		<key>price</key>
+		<string>1500</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>MX2</string>
+		<key>brand</key>
+		<string>Meizu</string>
+		<key>image</key>
+		<string>MX2</string>
+		<key>price</key>
+		<string>800</string>
+	</dict>
+</array>
+</plist>

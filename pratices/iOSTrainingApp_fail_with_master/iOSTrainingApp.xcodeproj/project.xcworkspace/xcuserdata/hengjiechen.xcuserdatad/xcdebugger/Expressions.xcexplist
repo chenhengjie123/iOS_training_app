@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "iOSTrainingApp.MasterViewController.tableView (iOSTrainingApp.MasterViewController)(ObjectiveC.UITableView, cellForRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; ObjectiveC.UITableViewCell:MasterViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIImage(named: imagePath as String)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "iOSTrainingApp.MasterViewController.viewDidLoad (iOSTrainingApp.MasterViewController)() -&gt; ():MasterViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSArray(contentsOfFile: plistPath!)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
