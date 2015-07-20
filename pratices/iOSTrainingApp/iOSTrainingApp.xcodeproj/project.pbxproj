@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		924964501B5A5CAE00930F7F /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9249644F1B5A5CAE00930F7F /* ProductDAO.swift */; };
+		924964591B5A6F3600930F7F /* ProductBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924964581B5A6F3600930F7F /* ProductBL.swift */; };
+		9249645A1B5A71CF00930F7F /* ProductDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9249644F1B5A5CAE00930F7F /* ProductDAO.swift */; };
+		9249645C1B5A71EF00930F7F /* ProductDAOTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9249645B1B5A71EF00930F7F /* ProductDAOTest.swift */; };
+		924964601B5A776F00930F7F /* ProductBLTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9249645F1B5A776F00930F7F /* ProductBLTest.swift */; };
+		924964611B5A779F00930F7F /* ProductBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924964581B5A6F3600930F7F /* ProductBL.swift */; };
+		9249646D1B5D505C00930F7F /* ProductManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924964621B5D41DF00930F7F /* ProductManagedObject.swift */; };
+		924964701B5D53F800930F7F /* CoreDataDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924964681B5D43BE00930F7F /* CoreDataDAO.swift */; };
+		924964711B5D54E200930F7F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9249646A1B5D466E00930F7F /* Product.swift */; };
+		924964721B5D54E500930F7F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9249646A1B5D466E00930F7F /* Product.swift */; };
+		924964731B5D54FC00930F7F /* CoreDataDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924964681B5D43BE00930F7F /* CoreDataDAO.swift */; };
 		92FF29EB1B4ADCC10097249A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FF29EA1B4ADCC10097249A /* AppDelegate.swift */; };
 		92FF29EE1B4ADCC10097249A /* iOSTrainingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92FF29EC1B4ADCC10097249A /* iOSTrainingApp.xcdatamodeld */; };
 		92FF29F01B4ADCC10097249A /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FF29EF1B4ADCC10097249A /* ProductListViewController.swift */; };
@@ -32,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9249644F1B5A5CAE00930F7F /* ProductDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDAO.swift; sourceTree = "<group>"; };
+		924964581B5A6F3600930F7F /* ProductBL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductBL.swift; sourceTree = "<group>"; };
+		9249645B1B5A71EF00930F7F /* ProductDAOTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDAOTest.swift; sourceTree = "<group>"; };
+		9249645F1B5A776F00930F7F /* ProductBLTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductBLTest.swift; sourceTree = "<group>"; };
+		924964621B5D41DF00930F7F /* ProductManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductManagedObject.swift; sourceTree = "<group>"; };
+		924964681B5D43BE00930F7F /* CoreDataDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataDAO.swift; sourceTree = "<group>"; };
+		9249646A1B5D466E00930F7F /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		92FF29E51B4ADCC10097249A /* iOSTrainingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTrainingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FF29E91B4ADCC10097249A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FF29EA1B4ADCC10097249A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +86,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9249644A1B5A5C1400930F7F /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				92FF29EA1B4ADCC10097249A /* AppDelegate.swift */,
+				92FF2A181B4C10EE0097249A /* ProductCell.swift */,
+				92FF29EF1B4ADCC10097249A /* ProductListViewController.swift */,
+				92FF29F11B4ADCC10097249A /* Main.storyboard */,
+				92FF29F41B4ADCC10097249A /* Images.xcassets */,
+				92FF29F61B4ADCC10097249A /* LaunchScreen.xib */,
+				92FF29E81B4ADCC10097249A /* Supporting Files */,
+			);
+			name = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		9249644B1B5A5C4900930F7F /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				924964581B5A6F3600930F7F /* ProductBL.swift */,
+			);
+			name = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		9249644C1B5A5C5500930F7F /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9249644D1B5A5C6E00930F7F /* dao */,
+				9249644E1B5A5C7600930F7F /* domain */,
+			);
+			name = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		9249644D1B5A5C6E00930F7F /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				9249644F1B5A5CAE00930F7F /* ProductDAO.swift */,
+				924964681B5D43BE00930F7F /* CoreDataDAO.swift */,
+			);
+			name = dao;
+			sourceTree = "<group>";
+		};
+		9249644E1B5A5C7600930F7F /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				924964621B5D41DF00930F7F /* ProductManagedObject.swift */,
+				9249646A1B5D466E00930F7F /* Product.swift */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
+		924964531B5A6BE000930F7F /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				924964541B5A6BF100930F7F /* dao */,
+			);
+			name = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		924964541B5A6BF100930F7F /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				9249645B1B5A71EF00930F7F /* ProductDAOTest.swift */,
+			);
+			name = dao;
+			sourceTree = "<group>";
+		};
+		9249645E1B5A775B00930F7F /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9249645F1B5A776F00930F7F /* ProductBLTest.swift */,
+			);
+			name = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
 		92FF29DC1B4ADCC10097249A = {
 			isa = PBXGroup;
 			children = (
@@ -89,14 +180,10 @@
 		92FF29E71B4ADCC10097249A /* iOSTrainingApp */ = {
 			isa = PBXGroup;
 			children = (
-				92FF29EA1B4ADCC10097249A /* AppDelegate.swift */,
-				92FF2A181B4C10EE0097249A /* ProductCell.swift */,
-				92FF29EF1B4ADCC10097249A /* ProductListViewController.swift */,
-				92FF29F11B4ADCC10097249A /* Main.storyboard */,
-				92FF29F41B4ADCC10097249A /* Images.xcassets */,
-				92FF29F61B4ADCC10097249A /* LaunchScreen.xib */,
+				9249644C1B5A5C5500930F7F /* PersistenceLayer */,
 				92FF29EC1B4ADCC10097249A /* iOSTrainingApp.xcdatamodeld */,
-				92FF29E81B4ADCC10097249A /* Supporting Files */,
+				9249644B1B5A5C4900930F7F /* BusinessLogicLayer */,
+				9249644A1B5A5C1400930F7F /* PresentationLayer */,
 			);
 			path = iOSTrainingApp;
 			sourceTree = "<group>";
@@ -114,6 +201,8 @@
 		92FF2A001B4ADCC10097249A /* iOSTrainingAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9249645E1B5A775B00930F7F /* BusinessLogicLayer */,
+				924964531B5A6BE000930F7F /* PersistenceLayer */,
 				92FF2A031B4ADCC10097249A /* iOSTrainingAppTests.swift */,
 				92FF2A011B4ADCC10097249A /* Supporting Files */,
 			);
@@ -243,9 +332,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				92FF29F01B4ADCC10097249A /* ProductListViewController.swift in Sources */,
+				924964501B5A5CAE00930F7F /* ProductDAO.swift in Sources */,
+				924964711B5D54E200930F7F /* Product.swift in Sources */,
 				92FF2A191B4C10EE0097249A /* ProductCell.swift in Sources */,
 				92FF29EB1B4ADCC10097249A /* AppDelegate.swift in Sources */,
+				924964701B5D53F800930F7F /* CoreDataDAO.swift in Sources */,
+				924964591B5A6F3600930F7F /* ProductBL.swift in Sources */,
 				92FF29EE1B4ADCC10097249A /* iOSTrainingApp.xcdatamodeld in Sources */,
+				9249646D1B5D505C00930F7F /* ProductManagedObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +347,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9249645A1B5A71CF00930F7F /* ProductDAO.swift in Sources */,
+				9249645C1B5A71EF00930F7F /* ProductDAOTest.swift in Sources */,
+				924964611B5A779F00930F7F /* ProductBL.swift in Sources */,
 				92FF2A041B4ADCC10097249A /* iOSTrainingAppTests.swift in Sources */,
+				924964731B5D54FC00930F7F /* CoreDataDAO.swift in Sources */,
+				924964601B5A776F00930F7F /* ProductBLTest.swift in Sources */,
+				924964721B5D54E500930F7F /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +545,7 @@
 				92FF2A091B4ADCC10097249A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92FF2A0A1B4ADCC10097249A /* Build configuration list for PBXNativeTarget "iOSTrainingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +554,7 @@
 				92FF2A0C1B4ADCC10097249A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

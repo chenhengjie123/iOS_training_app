@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A067B056-7951-47D7-A1EF-54E2DC50E8EE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>iOSTrainingApp</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>70BC453B2BFC4D019FFF3434731AF6F4EE114C59</key>
 		<string>https://github.com/chenhengjie123/iOS_training_app.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>pratices/iOSTrainingApp/iOSTrainingApp.xcodeproj/project.xcworkspace</string>
+	<string>pratices/iOSTrainingApp/iOSTrainingApp.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>70BC453B2BFC4D019FFF3434731AF6F4EE114C59</key>

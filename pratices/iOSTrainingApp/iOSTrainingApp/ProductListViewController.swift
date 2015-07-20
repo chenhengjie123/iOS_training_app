@@ -14,6 +14,8 @@ class ProductListViewController: UITableViewController, UISearchBarDelegate {
     var listProducts : NSArray!
     var listFilterProducts : NSMutableArray!
     
+    var bl = ProductBL()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,8 +25,9 @@ class ProductListViewController: UITableViewController, UISearchBarDelegate {
         self.searchBar.showsScopeBar = false
         self.searchBar.sizeToFit()
         
-        let plistPath = NSBundle.mainBundle().pathForResource("Products", ofType: "plist")
-        self.listProducts = NSArray(contentsOfFile: plistPath!)
+//        let plistPath = NSBundle.mainBundle().pathForResource("Products", ofType: "plist")
+//        self.listProducts = NSArray(contentsOfFile: plistPath!)
+        self.listProducts = bl.findAll() as NSArray
         
         self.filterContentForSearchText("")
         
@@ -44,19 +47,16 @@ class ProductListViewController: UITableViewController, UISearchBarDelegate {
         let cellIdentifier = "ProductCellIdentifier"
         
         var cell:ProductCell! = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as? ProductCell
-//        if (cell == nil){
-//            cell = ProductCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
-//        }
         
         let row = indexPath.row
-        let rowDict = self.listFilterProducts[row] as! NSDictionary
+        let product = self.listFilterProducts[row] as! Product
         
-        cell.productBrand.text = rowDict["brand"] as? String
-        cell.productName.text = rowDict["name"] as? String
-        let price = NSString(format: "￥ %@", rowDict["price"] as! String)
+        cell.productBrand.text = product.brand
+        cell.productName.text = product.name
+        let price = NSString(format: "￥ %@", product.price)
         cell.productPrice.text =  price as String
         
-        let imagePath = NSString(format: "%@.jpg", rowDict["image"] as! String)
+        let imagePath = NSString(format: "%@.jpg", product.imagePath)
         cell.productImage.image = UIImage(named: imagePath as String)
         
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
@@ -93,9 +93,7 @@ class ProductListViewController: UITableViewController, UISearchBarDelegate {
         
         var tempArray : NSArray!
         
-        let namePredicate = NSPredicate(format:"SELF.name contains[c] %@", searchText)
-        tempArray = self.listProducts.filteredArrayUsingPredicate(namePredicate)
-        self.listFilterProducts = NSMutableArray(array: tempArray)
+        self.listFilterProducts = NSMutableArray(array: bl.findByName(searchText as! String))
     }
 
 }

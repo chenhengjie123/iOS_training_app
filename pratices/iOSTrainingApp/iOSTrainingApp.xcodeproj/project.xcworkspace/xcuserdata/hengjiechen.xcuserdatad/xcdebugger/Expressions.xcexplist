@@ -13,5 +13,24 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "iOSTrainingApp.ProductListViewController.viewDidLoad (iOSTrainingApp.ProductListViewController)() -&gt; ():ProductListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bl.findAll()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "iOSTrainingApp.ProductListViewController.filterContentForSearchText (iOSTrainingApp.ProductListViewController)(ObjectiveC.NSString) -&gt; ():ProductListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSMutableArray(array: bl.findByName(searchText as! String))">
+            </PersistentString>
+            <PersistentString
+               value = "self.listFilterProducts">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

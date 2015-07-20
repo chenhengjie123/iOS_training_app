@@ -3,6 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>id</key>
+		<integer>1</integer>
 		<key>name</key>
 		<string>MX4</string>
 		<key>brand</key>
@@ -13,6 +15,8 @@
 		<string>1799</string>
 	</dict>
 	<dict>
+		<key>id</key>
+		<integer>2</integer>
 		<key>name</key>
 		<string>MX3</string>
 		<key>brand</key>
@@ -23,6 +27,8 @@
 		<string>1500</string>
 	</dict>
 	<dict>
+		<key>id</key>
+		<integer>3</integer>
 		<key>name</key>
 		<string>MX2</string>
 		<key>brand</key>
